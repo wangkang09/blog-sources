@@ -382,7 +382,7 @@ url="jdbc:mysql://localhost:3306/DB?useUnicode=true&characterEncoding=GBK"
 
 #### 6.3 一个汉字变成两个问号
 
-![](./img/一个中文变成两个问号)
+![](./img/一个中文变成两个问号.png)
 
 - 一般是经历了多次误编解码操作
 
