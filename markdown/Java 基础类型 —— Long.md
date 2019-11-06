@@ -91,7 +91,7 @@
 | static long | max(long a, long b) | Math.max(a, b)                    |
 | static long | min(long a, long b) | Math.min(a, b)                    |
 
-### 1.11 decode/hashCode/stringSize/toUnsignedLong
+### 1.11 decode/hashCode/stringSize
 
 | 返回类型      | 方法名               | 描述                                                |
 | ------------- | -------------------- | --------------------------------------------------- |

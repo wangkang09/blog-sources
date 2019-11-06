@@ -5,12 +5,13 @@
 
 ## 1 基础类型总览
 
-| 基础类型类别     | 属性                                                         |
-| ---------------- | ------------------------------------------------------------ |
-| 8 种基本数据类型 | byte    short    char    int    float    double    boolean   |
-| 对应的包装类型   | Byte    Short    Character    Integer    Float    Double    Boolean |
-| String           | 它的默认值和其它引用类型一样 为 null                         |
-| 大数据的计算     | BigInteger     BigDecimal                                    |
+| 基础类型类别                  | 属性                                                         |
+| ----------------------------- | ------------------------------------------------------------ |
+| 8 种基本数据类型              | byte    short    char    int    float    double    boolean   |
+| 对应的包装类型                | Byte    Short    Character    Integer    Float    Double    Boolean |
+| String                        | 它的默认值和其它引用类型一样 为 null                         |
+| 大数(超过 long)高精度的计算   | BigInteger，如果不超过，不建议用                             |
+| 大数(超过 double)高精度的计算 | BigDecimal，如果不超过，不建议用                             |
 
 
 
@@ -33,21 +34,23 @@
 
 ![](./img/类层次结构.png)
 
-### 3.1 Number 类解析
+### 3.1 Character 类解析
 
-- 待总结
+- [Java 基础类型 —— Character](<https://blog.csdn.net/kangsa998/article/details/102901766>)
 
-### 3.2 Character 类解析
+### 3.2 String 类解析
 
-- 待总结
+- [Java 基础类型 —— String](<https://blog.csdn.net/kangsa998/article/details/102901912>)
 
-### 3.3 String 类解析
+### 3.3 Boolean 类解析 
 
-- 待总结
+- [Java 基础类型 —— Boolean](<https://blog.csdn.net/kangsa998/article/details/102936538>)
 
-### 3.4 Boolean 类解析 
+### 3.4 Number 类解析
 
-- 待总结
+- [Java 基础类型 —— Number](<https://blog.csdn.net/kangsa998/article/details/102937614>)
+
+
 
 
 
