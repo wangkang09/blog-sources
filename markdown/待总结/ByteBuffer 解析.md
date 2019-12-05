@@ -111,7 +111,7 @@ direct buffer 也可以通过将文件的一个区域直接映射到内存中来
 | abstract [ByteBuffer](https://docs.oracle.com/javase/7/docs/api/java/nio/ByteBuffer.html) | **put**(int index, byte b)                                   | 向该 buffer 的指定位置加入字节         |
 | abstract [ByteBuffer](https://docs.oracle.com/javase/7/docs/api/java/nio/ByteBuffer.html) | **putXXX**(char value)                                       | 将XXX加入缓冲区                        |
 | abstract [ByteBuffer](https://docs.oracle.com/javase/7/docs/api/java/nio/ByteBuffer.html) | **putXXX**(int index, char value)                            | 将XXX加入缓冲区的指定位置              |
-| abstract [ByteBuffer](https://docs.oracle.com/javase/7/docs/api/java/nio/ByteBuffer.html) | **slice**()                                                  | 创建一个新的 byte buffer 共享此 buffer |
+| abstract [ByteBuffer](https://docs.oracle.com/javase/7/docs/api/java/nio/ByteBuffer.html) | **slice**()                                                  | 创建一个新的独立的 byte buffer         |
 | [String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) | **toString**()                                               |                                        |
 | static [ByteBuffer](https://docs.oracle.com/javase/7/docs/api/java/nio/ByteBuffer.html) | **wrap**(byte[] array)                                       | 将字节数组包装成缓冲区                 |
 | static [ByteBuffer](https://docs.oracle.com/javase/7/docs/api/java/nio/ByteBuffer.html) | **wrap**(byte[] array, int offset, int length)               | 将字节数组包装成缓冲区                 |
