@@ -1,4 +1,4 @@
-一个存储基础类型数据的容器
+一个存储基本类型数据的容器
 
 缓冲器是特定基本类型元素的线性、有限序列。除了内容外，缓冲区的基本特性是capacity、limit和position：
 
@@ -14,8 +14,8 @@
 
 此类的每个子类都定义了两类get和put操作：
 
-- 相对操作从当前位置开始读取或写入一个或多个元素，然后按传输的元素数递增该位置。如果请求的传输超过限制，则相对get操作抛出BufferUnderflowException，相对put操作抛出BufferOverflowException；在这两种情况下，都不会传输数据。
-- 绝对操作采用显式元素索引，不影响位置。如果索引参数超过限制，绝对get和put操作将引发indexOutboundsException。
+- **相对操作**：从当前位置开始读取或写入一个或多个元素，然后按传输的元素数递增该位置。如果请求的传输超过限制，则相对get操作抛出BufferUnderflowException，相对put操作抛出BufferOverflowException；在这两种情况下，都不会传输数据。
+- **绝对操作** ：采用显式元素索引，不影响位置。如果索引参数超过限制，绝对get和put操作将引发indexOutboundsException。
 
 数据也可以通过适当 channel 的I/O操作传入或传出缓冲区，该信道总是相对于当前位置的。
 
@@ -23,7 +23,7 @@
 
 #### Marking and resetting
 
-缓冲区的 mark 是调用 reset 方法时将其 position 重置到 mark 处的位置。mark 并不一定会被使用，但当它被定义时，它不会为负，也不会大于当前 position。如果定义了 mark，则当将 position 或 limit 调整为小于 mark 的值时，该标记将被丢弃。如果未定义 mark ，则调用reset方法将引发InvalidMarkException。
+缓冲区的 mark 是调用 reset 方法时将其 position 重置到 mark 处的位置。mark 并不一定会被使用，但当它被定义时，它不会为负，**也不会大于当前 position** 。如果定义了 mark，则当将 position 或 limit 调整为小于 mark 的值时，该标记将被丢弃。如果未定义 mark ，则调用reset方法将引发InvalidMarkException。
 
 
 
@@ -82,6 +82,16 @@
 #### Thread safety
 
 - buffer 不是线程安全的
+
+
+
+#### arrayOffset
+
+- 如果 buffer 是一个 array 的一部分形成的，返回 array 这一部分的起始部分
+- 如果 buffer 是一个 array 的一部分形成的，则 buffer 的 p 位置，对应 array 的 p+arrayOffset() 位置
+- 使用 arrayOffset 之前，应该先调用 hasArray() 判断 Buffer 是否来自一个可使用的 array
+
+
 
 
 
